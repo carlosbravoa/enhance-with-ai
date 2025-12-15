@@ -5,74 +5,33 @@ Adds a panel button that enhances the clipboard text using OpenAI.
 ## Installation
 
 Copy the extension into your GNOME extensions directory:
+The name of the folder containing the extension has to match the UUID inside the metadata file
+In this case, the extension is called enhance-with-ai@cabra.cl but feel free to change it to 
+whatever makes you happy :)  - Just make sure it contains `@something` at the end.
 
 ```bash
 mkdir -p ~/.local/share/gnome-shell/extensions/
-cp -r enhance-with-ai@carlos ~/.local/share/gnome-shell/extensions/
+cp -r enhance-with-ai ~/.local/share/gnome-shell/extensions/enhance-with-ai@cabra.cl
+```
 
-Restart GNOME Shell:
-
-- Press Alt+F2
-- Enter: r
-- Press Enter
-
-Enable the extension:
+Restart GNOME Shell by logging out and in again and enable the extension:
 
 ```
-gnome-extensions enable enhance-with-ai@carlos
+gnome-extensions enable enhance-with-ai@cabra.cl
 ```
 
 ## Requirements
 
 - Python 3.10+
-- The openai Python package `pip install openai`
+- The openai Python package `pip install openai` (If you are on Ubuntu 24.04 or later, `apt install python3-openai`
 - A valid OpenAI API key
 
 ### Setting your OpenAI API key
 
-The helper script (`ai-helper.py`) reads the API key from the `OPENAI_API_KEY` environment variable.
+The helper script (`main.py`) reads the API key from `~/.config/enhance-with-ai-extension/config`
+But it will create it for you on the first run. After the config file has been created, feel free to
+edit it with any text editor and add your own API Key there (sk-XXX)
 
-Add it permanently to your shell environment by editing `~/.bashrc` or `~/.profile`:
-
-```
-export OPENAI_API_KEY="your_api_key_here"
-```
-
-Then reload your shell:
-
-```
-source ~/.bashrc
-```
-Or log out and log back in.
-
-### Alternative: Store the key in a config file
-
-You may prefer not to export environment variables system-wide.
-You can instead store the key in a file, for example:
-
-```
-~/.config/openai/key
-```
-
-Put your key inside:
-
-```
-sk-xxxxx
-```
-
-And modify `ai-helper.py` to load it manually:
-
-```
-import os
-import pathlib
-
-key_file = pathlib.Path("~/.config/openai/key").expanduser()
-if key_file.exists():
-    os.environ["OPENAI_API_KEY"] = key_file.read_text().strip()
-
-```
-
-This keeps your environment cleaner and your key separate.
 
 ## Usage
 
