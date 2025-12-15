@@ -1,10 +1,10 @@
 {
   "uuid": "enhance-with-ai@cabra.cl",
   "name": "Enhance With AI",
-  "description": "Enhance selected text using OpenAI",
+  "description": "A Gnome 45+ extension to bring ChatGPT to your desktop",
   "version": 1,
   "shell-version": ["45", "46", "47", "48", "49"],
-  "url": "https://www.github.com/carlosbravoa",
+  "url": "https://github.com/carlosbravoa/enhance-with-ai",
   "js-modules": ["extension.js"],
   "requestFramePermissions": []
 }
