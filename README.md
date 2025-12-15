@@ -1,6 +1,6 @@
 # Enhance With AI — GNOME Shell Extension
 
-Adds a panel button that enhances the clipboard text using OpenAI.
+Adds a panel button that brings chat GPT to your GNOME desktop.
 
 ## Installation
 
