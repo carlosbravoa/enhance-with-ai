@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.ai-helper" path="/org/gnome/shell/extensions/ai-helper/">
+    <key name="openai-api-key" type="s">
+      <default>""</default>
+      <summary>OpenAI API Key</summary>
+      <description>The API key used to communicate with the OpenAI API</description>
+    </key>
+  </schema>
+</schemalist>

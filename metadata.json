@@ -1,0 +1,11 @@
+{
+  "uuid": "enhance-with-ai@cabra.cl",
+  "name": "Enhance With AI",
+  "description": "Enhance selected text using OpenAI",
+  "version": 1,
+  "shell-version": ["45", "46", "47", "48", "49"],
+  "url": "https://www.github.com/carlosbravoa",
+  "js-modules": ["extension.js"],
+  "requestFramePermissions": []
+}
+

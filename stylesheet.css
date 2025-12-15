@@ -1,0 +1,28 @@
+.ai-helper-content-box {
+    spacing: 16px;
+    padding: 12px;
+    min-width: 400px;
+}
+
+.ai-helper-preview-label {
+    font-size: 0.9em;
+    color: #888;
+}
+
+.ai-helper-entry {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #555;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.ai-helper-scrollview {
+    max-height: 400px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+
+.ai-helper-result-label {
+    font-family: monospace;
+}
