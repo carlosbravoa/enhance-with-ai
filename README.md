@@ -26,7 +26,7 @@ gnome-extensions enable enhance-with-ai@cabra.cl
 - The openai Python package `pip install openai` (If you are on Ubuntu 24.04 or later, `apt install python3-openai`
 - A valid OpenAI API key
 
-### Setting your OpenAI API key
+## Setting your OpenAI API key
 
 The helper script (`main.py`) reads the API key from `~/.config/enhance-with-ai-extension/config`
 But it will create it for you on the first run. After the config file has been created, feel free to
