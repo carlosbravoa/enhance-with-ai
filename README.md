@@ -1,4 +1,4 @@
-# Enhance With AI — GNOME Shell Extension
+# Enhance With AI — ChatGPT GNOME Shell Extension
 
 Adds a panel button that brings chat GPT to your GNOME desktop.
 
