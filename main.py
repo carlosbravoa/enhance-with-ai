@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 from openai import OpenAI
 
-CONFIG_DIR = Path.home() / ".config" / "enhance-with-ai-extension"
+CONFIG_DIR = Path.home() / ".config" / "enhance-with-ai"
 CONFIG_FILE = CONFIG_DIR / "config"
 
 DEFAULT_MODEL = "gpt-4o-mini"
